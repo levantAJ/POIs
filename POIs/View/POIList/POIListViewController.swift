@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  POIListViewController.swift
 //  POIs
 //
 //  Created by levantAJ on 20/10/18.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class POIListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-
 }
-
