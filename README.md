@@ -9,6 +9,8 @@ This project to show list of POIs on Google Map.
 2. Open terminal and run script `pod install`
 3. Open `POIs.xcworkspace`
 4. Press `⌘` + `R` to run project 
+![simulator screen shot - iphone x - 2018-10-21 at 01 55 20](https://user-images.githubusercontent.com/6329656/47259502-63f5ab80-d4d4-11e8-8d1e-5b4204a7d287.png)
+
 
 ### Project structure
 - Model: Contains entities like POI
