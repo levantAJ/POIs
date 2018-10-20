@@ -40,9 +40,3 @@ extension ServiceRequester: ServiceRequestable {
         }
     }
 }
-
-extension Constant {
-    struct ServiceRequester {
-        static let Host = "https://codetest18292.mvlchain.io"
-    }
-}
