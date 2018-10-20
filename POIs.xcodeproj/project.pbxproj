@@ -13,6 +13,8 @@
 		3367487E217B6A040011725A /* POIServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3367487D217B6A040011725A /* POIServiceApi.swift */; };
 		33674880217B6C430011725A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3367487F217B6C430011725A /* Constant.swift */; };
 		33674882217B6E7E0011725A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33674881217B6E7E0011725A /* APIError.swift */; };
+		33674885217B70380011725A /* POIListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33674884217B70380011725A /* POIListViewModel.swift */; };
+		33674888217B70E00011725A /* OptionalValueBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33674887217B70E00011725A /* OptionalValueBinder.swift */; };
 		33A21F89217B43D800CAA458 /* POIListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A21F88217B43D800CAA458 /* POIListViewController.swift */; };
 		33B2B69B217B418A00C3E887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B2B69A217B418A00C3E887 /* AppDelegate.swift */; };
 		33B2B6A0217B418A00C3E887 /* POIList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B2B69E217B418A00C3E887 /* POIList.storyboard */; };
@@ -48,6 +50,8 @@
 		3367487D217B6A040011725A /* POIServiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIServiceApi.swift; sourceTree = "<group>"; };
 		3367487F217B6C430011725A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		33674881217B6E7E0011725A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		33674884217B70380011725A /* POIListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIListViewModel.swift; sourceTree = "<group>"; };
+		33674887217B70E00011725A /* OptionalValueBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalValueBinder.swift; sourceTree = "<group>"; };
 		33A21F88217B43D800CAA458 /* POIListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIListViewController.swift; sourceTree = "<group>"; };
 		33B2B697217B418A00C3E887 /* POIs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POIs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B2B69A217B418A00C3E887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +121,22 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		33674883217B702B0011725A /* POIList */ = {
+			isa = PBXGroup;
+			children = (
+				33674884217B70380011725A /* POIListViewModel.swift */,
+			);
+			path = POIList;
+			sourceTree = "<group>";
+		};
+		33674886217B70D50011725A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				33674887217B70E00011725A /* OptionalValueBinder.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		33A21F81217B427300CAA458 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +182,7 @@
 		33A21F86217B42E100CAA458 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				33674883217B702B0011725A /* POIList */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -199,6 +220,7 @@
 		33B2B699217B418A00C3E887 /* POIs */ = {
 			isa = PBXGroup;
 			children = (
+				33674886217B70D50011725A /* Utility */,
 				33A21F81217B427300CAA458 /* Engine */,
 				33A21F86217B42E100CAA458 /* ViewModel */,
 				33A21F85217B42DA00CAA458 /* View */,
@@ -482,7 +504,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33674888217B70E00011725A /* OptionalValueBinder.swift in Sources */,
 				33B2B69B217B418A00C3E887 /* AppDelegate.swift in Sources */,
+				33674885217B70380011725A /* POIListViewModel.swift in Sources */,
 				3367487E217B6A040011725A /* POIServiceApi.swift in Sources */,
 				33674877217B4F890011725A /* POI.swift in Sources */,
 				3367487B217B60C50011725A /* ServiceRequester.swift in Sources */,
