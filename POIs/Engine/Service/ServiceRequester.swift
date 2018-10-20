@@ -31,8 +31,8 @@ extension ServiceRequester: ServiceRequestable {
             } else if let data = response.data {
                 do {
                     let decoder = JSONDecoder()
-                    let object = try decoder.decode([T].self, from: data)
-                    completion(.success(object))
+                    let objects = try decoder.decode([T].self, from: data)
+                    completion(.success(objects))
                 } catch {
                     completion(.failure(error))
                 }

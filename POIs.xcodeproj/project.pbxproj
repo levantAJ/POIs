@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		20A21B69B23563F100A18217 /* Pods_POIsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD59296556520FC2A7F25FA5 /* Pods_POIsUITests.framework */; };
+		334070B1217B8C2400A4C558 /* POIMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334070B0217B8C2400A4C558 /* POIMarker.swift */; };
+		334070B3217B902B00A4C558 /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 334070B2217B902B00A4C558 /* Location.gpx */; };
+		334070B5217B915300A4C558 /* POIMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334070B4217B915300A4C558 /* POIMarkerView.swift */; };
+		334070B7217B917700A4C558 /* POIMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 334070B6217B917700A4C558 /* POIMarkerView.xib */; };
+		334070BA217B92EF00A4C558 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334070B9217B92EF00A4C558 /* UIView.swift */; };
+		334070BC217BA31800A4C558 /* GMSMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334070BB217BA31800A4C558 /* GMSMarker.swift */; };
 		33674877217B4F890011725A /* POI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33674876217B4F890011725A /* POI.swift */; };
 		3367487B217B60C50011725A /* ServiceRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3367487A217B60C50011725A /* ServiceRequester.swift */; };
 		3367487E217B6A040011725A /* POIServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3367487D217B6A040011725A /* POIServiceApi.swift */; };
@@ -15,6 +21,7 @@
 		33674882217B6E7E0011725A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33674881217B6E7E0011725A /* APIError.swift */; };
 		33674885217B70380011725A /* POIListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33674884217B70380011725A /* POIListViewModel.swift */; };
 		33674888217B70E00011725A /* OptionalValueBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33674887217B70E00011725A /* OptionalValueBinder.swift */; };
+		3367488A217B74210011725A /* Factorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33674889217B74210011725A /* Factorable.swift */; };
 		33A21F89217B43D800CAA458 /* POIListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A21F88217B43D800CAA458 /* POIListViewController.swift */; };
 		33B2B69B217B418A00C3E887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B2B69A217B418A00C3E887 /* AppDelegate.swift */; };
 		33B2B6A0217B418A00C3E887 /* POIList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B2B69E217B418A00C3E887 /* POIList.storyboard */; };
@@ -45,6 +52,12 @@
 
 /* Begin PBXFileReference section */
 		2D62B282935F58FCB0CB4C7C /* Pods_POIsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POIsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		334070B0217B8C2400A4C558 /* POIMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIMarker.swift; sourceTree = "<group>"; };
+		334070B2217B902B00A4C558 /* Location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		334070B4217B915300A4C558 /* POIMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIMarkerView.swift; sourceTree = "<group>"; };
+		334070B6217B917700A4C558 /* POIMarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = POIMarkerView.xib; sourceTree = "<group>"; };
+		334070B9217B92EF00A4C558 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		334070BB217BA31800A4C558 /* GMSMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMarker.swift; sourceTree = "<group>"; };
 		33674876217B4F890011725A /* POI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POI.swift; sourceTree = "<group>"; };
 		3367487A217B60C50011725A /* ServiceRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequester.swift; sourceTree = "<group>"; };
 		3367487D217B6A040011725A /* POIServiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIServiceApi.swift; sourceTree = "<group>"; };
@@ -52,6 +65,7 @@
 		33674881217B6E7E0011725A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		33674884217B70380011725A /* POIListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIListViewModel.swift; sourceTree = "<group>"; };
 		33674887217B70E00011725A /* OptionalValueBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalValueBinder.swift; sourceTree = "<group>"; };
+		33674889217B74210011725A /* Factorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factorable.swift; sourceTree = "<group>"; };
 		33A21F88217B43D800CAA458 /* POIListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIListViewController.swift; sourceTree = "<group>"; };
 		33B2B697217B418A00C3E887 /* POIs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POIs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B2B69A217B418A00C3E887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +117,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		334070B8217B92E100A4C558 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				334070B9217B92EF00A4C558 /* UIView.swift */,
+				334070BB217BA31800A4C558 /* GMSMarker.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		33674878217B5FC40011725A /* Constant */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				33674887217B70E00011725A /* OptionalValueBinder.swift */,
+				33674889217B74210011725A /* Factorable.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -140,6 +164,8 @@
 		33A21F81217B427300CAA458 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				334070B8217B92E100A4C558 /* Extension */,
+				33674886217B70D50011725A /* Utility */,
 				33674878217B5FC40011725A /* Constant */,
 				33674879217B5FD40011725A /* Service */,
 			);
@@ -158,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				33B2B6A1217B418B00C3E887 /* Assets.xcassets */,
+				334070B2217B902B00A4C558 /* Location.gpx */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -190,6 +217,9 @@
 		33A21F87217B42FB00CAA458 /* POIList */ = {
 			isa = PBXGroup;
 			children = (
+				334070B4217B915300A4C558 /* POIMarkerView.swift */,
+				334070B6217B917700A4C558 /* POIMarkerView.xib */,
+				334070B0217B8C2400A4C558 /* POIMarker.swift */,
 				33A21F88217B43D800CAA458 /* POIListViewController.swift */,
 			);
 			path = POIList;
@@ -220,13 +250,12 @@
 		33B2B699217B418A00C3E887 /* POIs */ = {
 			isa = PBXGroup;
 			children = (
-				33674886217B70D50011725A /* Utility */,
+				33A21F82217B42C200CAA458 /* Model */,
 				33A21F81217B427300CAA458 /* Engine */,
 				33A21F86217B42E100CAA458 /* ViewModel */,
 				33A21F85217B42DA00CAA458 /* View */,
 				33A21F84217B42D200CAA458 /* Storyboard */,
 				33A21F83217B42C900CAA458 /* Resource */,
-				33A21F82217B42C200CAA458 /* Model */,
 				33B2B69A217B418A00C3E887 /* AppDelegate.swift */,
 				33B2B6A6217B418B00C3E887 /* Info.plist */,
 			);
@@ -384,8 +413,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334070B7217B917700A4C558 /* POIMarkerView.xib in Resources */,
 				33B2B6A5217B418B00C3E887 /* LaunchScreen.storyboard in Resources */,
 				33B2B6A2217B418B00C3E887 /* Assets.xcassets in Resources */,
+				334070B3217B902B00A4C558 /* Location.gpx in Resources */,
 				33B2B6A0217B418A00C3E887 /* POIList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,15 +535,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334070BA217B92EF00A4C558 /* UIView.swift in Sources */,
 				33674888217B70E00011725A /* OptionalValueBinder.swift in Sources */,
 				33B2B69B217B418A00C3E887 /* AppDelegate.swift in Sources */,
 				33674885217B70380011725A /* POIListViewModel.swift in Sources */,
 				3367487E217B6A040011725A /* POIServiceApi.swift in Sources */,
+				334070B1217B8C2400A4C558 /* POIMarker.swift in Sources */,
 				33674877217B4F890011725A /* POI.swift in Sources */,
 				3367487B217B60C50011725A /* ServiceRequester.swift in Sources */,
+				3367488A217B74210011725A /* Factorable.swift in Sources */,
 				33A21F89217B43D800CAA458 /* POIListViewController.swift in Sources */,
 				33674880217B6C430011725A /* Constant.swift in Sources */,
 				33674882217B6E7E0011725A /* APIError.swift in Sources */,
+				334070B5217B915300A4C558 /* POIMarkerView.swift in Sources */,
+				334070BC217BA31800A4C558 /* GMSMarker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

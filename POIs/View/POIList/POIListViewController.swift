@@ -13,9 +13,11 @@ import GoogleMaps
 final class POIListViewController: UIViewController {
     @IBOutlet weak var mapView: GMSMapView!
     lazy var locationManager = CLLocationManager() //Component to indicate current location
+    var viewModel: POIListViewModelProtocol!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpViewModel()
         setUpViews()
     }
 }
@@ -36,11 +38,41 @@ extension POIListViewController: CLLocationManagerDelegate {
     }
 }
 
+// MARK: - GMSMapViewDelegate
+
+extension POIListViewController: GMSMapViewDelegate {
+    func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
+        let projection = mapView.projection.visibleRegion()
+        let bottomLeftCorner = projection.nearLeft
+        let topRightCorner = projection.farRight
+        viewModel.retrievePOIs(bottomLeftCoordinate: bottomLeftCorner, topRightCoordinate: topRightCorner)
+    }
+    
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        mapView.selectedMarker = marker
+        marker.zIndex = 1
+        return true
+    }
+}
+
 // MARK: - Privates
 
 extension POIListViewController {
     private func setUpViews() {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
+        
+        mapView.delegate = self
+    }
+    
+    private func setUpViewModel() {
+        viewModel = POIListViewModel.create()
+        viewModel.addedMarkers.valueChanged = { [weak self] markers in
+            guard let strongSelf = self,
+                let markers = markers else { return }
+            for marker in markers {
+                marker.map = strongSelf.mapView
+            }
+        }
     }
 }

@@ -16,4 +16,12 @@ struct POI: Codable {
     var name: String?
     var latitude: Double?
     var longitude: Double?
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        type = try values.decode(POIType.self, forKey: .type)
+        name = try values.decode(String.self, forKey: .name)
+        latitude = Double(try values.decode(String.self, forKey: .latitude))
+        longitude = Double(try values.decode(String.self, forKey: .longitude))
+    }
 }
