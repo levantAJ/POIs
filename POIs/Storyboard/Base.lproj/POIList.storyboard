@@ -16,12 +16,28 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJo-qA-bDW" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pJo-qA-bDW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="I9R-7Z-N04"/>
+                            <constraint firstAttribute="bottom" secondItem="pJo-qA-bDW" secondAttribute="bottom" id="eeW-M4-kxu"/>
+                            <constraint firstItem="pJo-qA-bDW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hT2-7j-qCd"/>
+                            <constraint firstAttribute="trailing" secondItem="pJo-qA-bDW" secondAttribute="trailing" id="vWS-98-0d6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="pJo-qA-bDW" id="FvM-dN-ldC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-250" y="65"/>
         </scene>
     </scenes>
 </document>
