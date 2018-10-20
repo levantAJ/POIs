@@ -24,11 +24,11 @@ This project to show list of POIs on Google Map.
 - Resource: Assets, icons
 
 
-
 ### Testing: Unit + UI Test:
-Press `⌘` + `U` to test all project  
-
-`sut`: Subject/System Under Test
+- How to test: Press `⌘` + `U` to test all project  
+- Note: 
+	- Use traditional way to mock a dependency by extract to  protocol for any object and apply dependency injection to facilitate mocking.
+	- `sut`: Subject/System Under Test
 
 ### Libraries:
 - GoogleMaps
