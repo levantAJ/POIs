@@ -1,9 +1,9 @@
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'POIs' do
   use_frameworks!
-  # Pods for POIs
   pod 'GoogleMaps'
+  pod 'Alamofire', '~> 4.7'
   
   target 'POIsTests' do
     inherit! :search_paths

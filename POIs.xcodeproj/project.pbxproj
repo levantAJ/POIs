@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		20A21B69B23563F100A18217 /* Pods_POIsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD59296556520FC2A7F25FA5 /* Pods_POIsUITests.framework */; };
 		33674877217B4F890011725A /* POI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33674876217B4F890011725A /* POI.swift */; };
+		3367487B217B60C50011725A /* ServiceRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3367487A217B60C50011725A /* ServiceRequester.swift */; };
 		33A21F89217B43D800CAA458 /* POIListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A21F88217B43D800CAA458 /* POIListViewController.swift */; };
 		33B2B69B217B418A00C3E887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B2B69A217B418A00C3E887 /* AppDelegate.swift */; };
 		33B2B6A0217B418A00C3E887 /* POIList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B2B69E217B418A00C3E887 /* POIList.storyboard */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		2D62B282935F58FCB0CB4C7C /* Pods_POIsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POIsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33674876217B4F890011725A /* POI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POI.swift; sourceTree = "<group>"; };
+		3367487A217B60C50011725A /* ServiceRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequester.swift; sourceTree = "<group>"; };
 		33A21F88217B43D800CAA458 /* POIListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIListViewController.swift; sourceTree = "<group>"; };
 		33B2B697217B418A00C3E887 /* POIs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POIs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B2B69A217B418A00C3E887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,9 +93,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33674878217B5FC40011725A /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		33674879217B5FD40011725A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3367487A217B60C50011725A /* ServiceRequester.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3367487C217B62350011725A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		33A21F81217B427300CAA458 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				3367487C217B62350011725A /* Extension */,
+				33674879217B5FD40011725A /* Service */,
+				33674878217B5FC40011725A /* Constant */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -236,6 +263,7 @@
 				33B2B694217B418A00C3E887 /* Frameworks */,
 				33B2B695217B418A00C3E887 /* Resources */,
 				F30AC29E35B594FE1CFE18C2 /* [CP] Copy Pods Resources */,
+				197119443C4DC3D4BD254226 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -356,6 +384,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		197119443C4DC3D4BD254226 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-POIs/Pods-POIs-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-POIs/Pods-POIs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		82318C739639BD15F1F86C2D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,6 +483,7 @@
 			files = (
 				33B2B69B217B418A00C3E887 /* AppDelegate.swift in Sources */,
 				33674877217B4F890011725A /* POI.swift in Sources */,
+				3367487B217B60C50011725A /* ServiceRequester.swift in Sources */,
 				33A21F89217B43D800CAA458 /* POIListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
