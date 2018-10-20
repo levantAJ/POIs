@@ -10,7 +10,6 @@ import UIKit
 import CoreLocation
 import GoogleMaps
 
-
 final class POIListViewController: UIViewController {
     @IBOutlet weak var mapView: GMSMapView!
     lazy var locationManager = CLLocationManager() //Component to indicate current location

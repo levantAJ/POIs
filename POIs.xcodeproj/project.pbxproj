@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20A21B69B23563F100A18217 /* Pods_POIsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD59296556520FC2A7F25FA5 /* Pods_POIsUITests.framework */; };
+		33674877217B4F890011725A /* POI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33674876217B4F890011725A /* POI.swift */; };
 		33A21F89217B43D800CAA458 /* POIListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A21F88217B43D800CAA458 /* POIListViewController.swift */; };
 		33B2B69B217B418A00C3E887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B2B69A217B418A00C3E887 /* AppDelegate.swift */; };
 		33B2B6A0217B418A00C3E887 /* POIList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B2B69E217B418A00C3E887 /* POIList.storyboard */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		2D62B282935F58FCB0CB4C7C /* Pods_POIsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POIsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33674876217B4F890011725A /* POI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POI.swift; sourceTree = "<group>"; };
 		33A21F88217B43D800CAA458 /* POIListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIListViewController.swift; sourceTree = "<group>"; };
 		33B2B697217B418A00C3E887 /* POIs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POIs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B2B69A217B418A00C3E887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		33A21F82217B42C200CAA458 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				33674876217B4F890011725A /* POI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33B2B69B217B418A00C3E887 /* AppDelegate.swift in Sources */,
+				33674877217B4F890011725A /* POI.swift in Sources */,
 				33A21F89217B43D800CAA458 /* POIListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
