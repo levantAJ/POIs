@@ -1,0 +1,6 @@
+framework module Pods_POIsUITests {
+  umbrella header "Pods-POIsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
